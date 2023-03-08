@@ -1,0 +1,57 @@
+.header {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 17px;
+}
+
+.header__telephone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 0 40px;
+}
+
+.telephone {
+  padding-left: 36px;
+  color: @black;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 19px;
+    background-image: url("../img/dicor/tel.svg");
+    top: 3px;
+    left: 1px;
+  }
+}
+
+.header__slogan {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.slogan {
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 24px;
+    background-image: url("../img/dicor/three.svg");
+    top: 3px;
+    left: -35px;
+  }
+}
