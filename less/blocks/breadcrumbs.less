@@ -1,0 +1,41 @@
+.breadcrumbs {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  margin-top: 23px;
+  font-family: "Inter", sans-serif;
+  line-height: 19px;
+}
+
+.breadcrumbs__list {
+  list-style: none;
+  display: flex;
+  color: @black;
+  margin: 0;
+  padding: 0;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 15px;
+}
+
+.breadcrumbs__item {
+  padding-right: 23.5px;
+  position: relative;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/dicor/arrow.svg");
+  top: 4px;
+  right: 7.5px;
+}
+
+
+.breadcrumbs__link-house {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}

@@ -1,0 +1,69 @@
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 60px;
+}
+
+.articles__nav {
+  padding-left: 74px;
+}
+
+.articles__all {
+  margin: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    background-image: url("../img/dicor/list.svg");
+    left: -26px;
+  }
+}
+
+.articles__list {
+  margin: 0;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.articles__item {
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  padding-bottom: 5px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: @purple;
+    top: 10px;
+    left: -14px;
+  }
+}
+
+.articles__title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 40px;
+  line-height: 46px;
+  margin: 31px 0;
+  text-align: center;
+}
+
+.articles__art {
+  width: 886px;
+  padding-left: 20px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
