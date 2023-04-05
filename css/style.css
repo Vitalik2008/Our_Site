@@ -159,6 +159,8 @@ a {
 .nav__item--active {
   text-decoration: underline;
   text-underline-offset: 5px;
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
 }
 .nav__link {
   color: #ffffff;
