@@ -355,15 +355,24 @@ a {
   font-family: "Cuprum", sans-serif;
   font-size: 40px;
   line-height: 46px;
-  margin: 31px 0;
   text-align: center;
+  margin: 11px 0;
+  margin-bottom: 38px;
 }
 .articles__art {
-  width: 886px;
+  width: 906px;
   padding-left: 20px;
   font-family: "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 21px;
+}
+.articles__text {
+  text-indent: 21px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.articles__text::first-letter {
+  color: #5FA633;
 }
 .footer {
   width: 100%;
